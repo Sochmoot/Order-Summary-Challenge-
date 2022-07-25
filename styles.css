@@ -3,4 +3,42 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Red Hat Display', arial, serif;
+
+}
+
+.main-container {
+  width: 450px;
+  border-radius: 5%;
+}
+
+.text-section {
+  width: 450px;
+  height: 500px;
+  text-align: center;
+  margin: 30px auto 30px auto;
+}
+
+.text-section2 {
+  margin: 0 30px 0 30px;
+}
+
+.annual-plan {
+  background-color: hsl(225, 100%, 94%)
+  height: 50px;
+  width: 350px;
+  margin: 30px auto;
+  background-color: green;
+}
+
+.icon {
+  align-self: flex-start;
+}
+
+.button {
+  margin: 30px auto;
+}
+
+.cancel:hover {
+  background-color: yellow;
 }
