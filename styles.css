@@ -55,6 +55,7 @@ h1 {
   border-radius: 10px;
   font-weight: bold;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 /* the second part of the button class name allows the code to target specific buttons */
@@ -70,15 +71,24 @@ h1 {
   padding: 10px;
 }
 
-.btn-secondary {
-  background-color: transparent;
+/* Apply the opacity for the hover state to multiple buttons at once */
+.btn-primary:hover,
+.btn-change:hover {
+  opacity: 0.8; /* opacity makes an image transparent, 0.0 - 1 determine the degree of transparency */
 }
 
+.btn-secondary {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+}
+
+.btn-secondary:hover {
+  color: var(--dark-blue);
+}
 
 .container {
   background-color: white;
   margin: 20px;
-  padding: 20px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px var(--desaturated-blue);
 }
