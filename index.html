@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Order Summary | Frontend Mentor</title>
-    <link rel="icon" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <body>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+</head>
+
+<body>
+  <div class="bg__image">
 
 
-    <div class="dancing-image-container">
-      <img src="images/illustration-hero.svg" alt="">
-    </div>
+      <div class="container">
 
-
-
-      <div class="order-summary-text">
+        <img src="images/illustration-hero.svg" alt="dancing-picture">
         <h1>Order Summary</h1>
-      </div>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
 
-      <div class="descriptive-text">
-        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-      </div>
+        <div class="">
 
-      <div class="service-plan-container">
-        <div class="service-container-contents">
-            <img class="music-note" src="images/icon-music.svg" alt="music-note-image">
-            <h4 class="plan-text">Annual Plan</h4>
-            <p class="plan-price">$59.99/year</p>
+          <div class="">
+            <img src="images/icon-music.svg" alt="music-note">
+            <h4>Annual Plan</h4>
+            <p>$59.99/year</p>
+          </div>
+
+          <button class="btn btn-change" type="button" name="button">Change</button>
+
         </div>
 
-        <button class="btn-change">Change</button>
+
+
+        <div class="buttons">
+          <button class="btn btn-primary" type="button" name="button">Proceed to Payment</button>
+          <button class="btn btn-secondary" type="button" name="button">Cancel Order</button>
+        </div>
+
 
       </div>
 
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+
+
+  </div>
 
 
 
 
-
-  </body>
-
-
+</body>
 </html>

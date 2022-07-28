@@ -1,29 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Outfit&family=Red+Hat+Display:wght@600;700;900&family=Sacramento&display=swap');
+
+/* root targets the highest level parent, in this case the HTML element and is used to apply styling throughout the page*/
+/* have created variables using -- before colour names from style guide */
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+/* Attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
 body {
-  background-color: purple;
-}
-
-
-.dancing-image-container {
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
-}
-
-.order-summary-text {
-  color: hsl(223, 47%, 23%);
-  margin: 20px 0 0 0;
-}
-
-.descriptive-text {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
   text-align: center;
-  padding: 0 50px 0 50px;
+
+}
+
+p {
+  font-size: 1rem;
   line-height: 1.5;
-  color: hsl(224, 23%, 55%);
+  color: var(--desaturated-blue);
+}
+
+button {
+  font-family: inherit; /* inherit takes the styling from the parent element, in this case the body*/
+}
+
+h1 {
+  color: var(--dark-blue);
+}
+
+.bg__image {
+  background: url("images/pattern-background-mobile.svg") no-repeat center/cover;
+  height: 400px;
+}
+
+/* the first "btn" in the class name allows this styling to affect all buttons */
+.btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* the second part of the button class name allows the code to target specific buttons */
+.btn-change {
+  background-color: transparent;
+  color: var(--bright-blue);
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--bright-blue);
+  color: white;
+  padding: 10px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+}
+
+
+.container {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px var(--desaturated-blue);
 }
