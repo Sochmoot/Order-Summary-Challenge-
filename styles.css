@@ -26,6 +26,12 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background-color: var(--pale-blue);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
 
 }
 
@@ -37,10 +43,6 @@ p {
 
 button {
   font-family: inherit; /* inherit takes the styling from the parent element, in this case the body*/
-}
-
-h1 {
-  color: var(--dark-blue);
 }
 
 .bg__image {
@@ -69,6 +71,7 @@ h1 {
   background-color: var(--bright-blue);
   color: white;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* Apply the opacity for the hover state to multiple buttons at once */
@@ -86,10 +89,27 @@ h1 {
   color: var(--dark-blue);
 }
 
+.container h1 {
+  color: var(--dark-blue);
+  margin: 10px 0;
+}
+
+.container p.desc {
+  padding: 0 30px;
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* target the container and the image within that container that has the class "hero" */
 .container {
   background-color: white;
   margin: 20px;
+  padding-bottom: 20px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px var(--desaturated-blue);
 }
@@ -101,13 +121,24 @@ h1 {
 
 
 .container .pricing {
-  margin: 20px auto;
+  margin: 30px auto;
   background-color: var(--very-pale-blue);
   width: 90%;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 .container .pricing article {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+
+.container .pricing article img {
+  margin-right: 10px;
+  padding-left: 20px;
 }
