@@ -86,9 +86,28 @@ h1 {
   color: var(--dark-blue);
 }
 
+/* target the container and the image within that container that has the class "hero" */
 .container {
   background-color: white;
   margin: 20px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px var(--desaturated-blue);
+}
+
+.container img.hero {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.container .pricing {
+  margin: 20px auto;
+  background-color: var(--very-pale-blue);
+  width: 90%;
+  border-radius: 5px;
+}
+
+.container .pricing article {
+  display: flex;
+
 }
