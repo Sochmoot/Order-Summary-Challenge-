@@ -1,3 +1,5 @@
+/* STYLING FOR THE WHOLE PAGE */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Outfit&family=Red+Hat+Display:wght@600;700;900&family=Sacramento&display=swap');
 
 /* root targets the highest level parent, in this case the HTML element and is used to apply styling throughout the page*/
@@ -20,7 +22,7 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-
+/* HTML ELEMENT SELECTORS */
 
 body {
   font-family: "Red Hat Display", sans-serif;
@@ -31,6 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+
 }
 
 p {
@@ -42,6 +45,8 @@ p {
 button {
   font-family: inherit; /* inherit takes the styling from the parent element, in this case the body*/
 }
+
+/* SELECTORS FOR SPECIFIC ITEMS/CLASSES */
 
 .bg__image {
   background: url("images/pattern-background-desktop.svg") no-repeat center/cover;
@@ -115,6 +120,7 @@ button {
   border-radius: 15px;
   box-shadow: 3px 3px 3px var(--desaturated-blue);
   width: 425px;
+
 }
 
 .container img.hero {
