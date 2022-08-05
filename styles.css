@@ -50,7 +50,7 @@ button {
 
 .bg__image {
   background: url("images/pattern-background-desktop.svg") no-repeat center/cover;
-  height: 400px;
+
 }
 
 /* the first "btn" in the class name allows this styling to affect all buttons */
