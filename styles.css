@@ -33,6 +33,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: url("images/pattern-background-desktop.svg");
+  Background-position: top;
+  Background-repeat: no-repeat;
 
 }
 
@@ -49,7 +52,7 @@ button {
 /* SELECTORS FOR SPECIFIC ITEMS/CLASSES */
 
 .bg__image {
-  background: url("images/pattern-background-desktop.svg") no-repeat center/cover;
+
 
 }
 
